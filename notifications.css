@@ -22,11 +22,6 @@ body {
   padding: 1px 10px;
   margin: 6px;
 }
-/* 
-.notification-text {
-  display: flex;
-  flex-direction: column;
-} */
 
 .mark-all-as-read {
   background-color: white;
@@ -48,14 +43,15 @@ body {
   color: hsl(219, 12%, 42%);
   border-radius: 8px;
   margin: 15px 0px;
-  padding: 15px 20px;
+  padding: 0px 20px 15px;
 }
-
-/* .notification-container:hover  */
 
 .avatar,
 .woman-playing-chess {
-  width: 35px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 25px;
 }
 
 .avatar:hover {
@@ -70,6 +66,7 @@ body {
 .username {
   color: black;
   font-weight: bold;
+  margin: 5px;
 }
 
 .username:hover {
@@ -79,11 +76,13 @@ body {
 
 .time-stamp {
   color: hsl(219, 14%, 63%);
+  padding: 5px 48px 0px;
 }
 
 .notification-highlights {
   cursor: pointer;
   font-weight: bold;
+  margin: 3px;
 }
 
 .notification-highlights:hover {
@@ -94,6 +93,7 @@ body {
   color: hsl(219, 85%, 26%);
   font-weight: bold;
   cursor: pointer;
+  margin: 3px;
 }
 
 .private-message {
