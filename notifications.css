@@ -5,23 +5,66 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: white;
+  margin: 20px;
 }
 
-h1 {
-  font-size: 800;
+.notification-title {
+  display: inline-block;
+  font-size: larger;
+  font-weight: 800;
+}
+
+.notification-number {
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  border-radius: 7px;
+  font-weight: 400;
+  padding: 1px 10px;
+  margin: 6px;
+}
+/* 
+.notification-text {
+  display: flex;
+  flex-direction: column;
+} */
+
+.mark-all-as-read {
+  background-color: white;
+  color: hsl(219, 12%, 42%);
+  border: none;
+  font-family: "Plus Jakarta Sans";
+  font-size: medium;
+  float: right;
+  cursor: pointer;
+}
+
+.mark-all-as-read:hover {
+  color: hsl(219, 85%, 26%);
 }
 
 .notification-container {
+  background-color: hsl(211, 68%, 94%); /* NOTIF'N UNREAD */
+  /* background-color: white; */
   color: hsl(219, 12%, 42%);
-  background-color: hsl(211, 68%, 94%);
-  margin: inherit;
   border-radius: 8px;
+  margin: 15px 0px;
   padding: 15px 20px;
 }
+
+/* .notification-container:hover  */
 
 .avatar,
 .woman-playing-chess {
   width: 35px;
+}
+
+.avatar:hover {
+  cursor: pointer;
+}
+
+.woman-playing-chess:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.25rem hsl(219, 14%, 63%));
 }
 
 .username {
@@ -43,13 +86,24 @@ h1 {
   font-weight: bold;
 }
 
+.notification-highlights:hover {
+  color: hsl(219, 85%, 26%);
+}
+
 .club-name {
   color: hsl(219, 85%, 26%);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .private-message {
-  margin: 16px 55px;
+  border: solid 1px hsl(219, 14%, 63%);
+  border-radius: 5px;
+  margin: 15px 40px;
   padding: 15px;
-  border: hsl(205, 33%, 90%);
+}
+
+.private-message:hover {
+  background-color: hsl(211, 68%, 94%);
+  border: solid 1px white;
 }
