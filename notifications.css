@@ -8,6 +8,14 @@ body {
   margin: 20px;
 }
 
+.main-container {
+  background-color: white;
+  /* padding: 12px;
+  width: 75%;
+  border-radius: 10px;
+  margin: 90px; */
+}
+
 .notification-title {
   display: inline-block;
   font-size: larger;
@@ -54,14 +62,14 @@ body {
 }
 
 .notification-text {
-  display: inline-block;
+  padding: 0px 43px;
 }
 
 .avatar {
   width: 40px;
   height: 40px;
   position: relative;
-  top: 25px;
+  top: 35px;
 }
 
 .woman-playing-chess {
@@ -124,4 +132,18 @@ body {
 .private-message:hover {
   background-color: hsl(211, 68%, 94%);
   border: solid 1px white;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: aliceblue;
+    margin: 20px;
+  }
+
+  .main-container {
+    padding: 12px;
+    width: 75%;
+    border-radius: 10px;
+    margin: 90px;
+  }
 }
