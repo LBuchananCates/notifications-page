@@ -18,7 +18,7 @@ body {
   background-color: hsl(219, 85%, 26%);
   color: white;
   border-radius: 7px;
-  font-weight: 400;
+  font-size: medium;
   padding: 1px 10px;
   margin: 6px;
 }
@@ -38,20 +38,38 @@ body {
 }
 
 .notification-container {
-  background-color: hsl(211, 68%, 94%); /* NOTIF'N UNREAD */
-  /* background-color: white; */
+  background-color: hsl(211, 68%, 94%);
   color: hsl(219, 12%, 42%);
   border-radius: 8px;
   margin: 15px 0px;
   padding: 0px 20px 15px;
 }
 
-.avatar,
+.read {
+  background-color: white;
+  color: hsl(219, 12%, 42%);
+  border-radius: 8px;
+  margin: 15px 0px;
+  padding: 0px 20px 15px;
+}
+
+.notification-text {
+  display: inline-block;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 25px;
+}
+
 .woman-playing-chess {
   width: 40px;
   height: 40px;
   position: relative;
   top: 25px;
+  float: right;
 }
 
 .avatar:hover {
