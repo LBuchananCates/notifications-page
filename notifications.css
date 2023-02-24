@@ -57,14 +57,16 @@ body {
   padding: 0px 20px 15px;
 }
 
-/* create read and unread classes */
-
 .unread {
   background-color: hsl(211, 68%, 94%);
   color: hsl(219, 12%, 42%);
   border-radius: 8px;
   margin: 15px 0px;
   padding: 0px 20px 15px;
+}
+
+.red-dot {
+  color: red;
 }
 
 .notification-text {
