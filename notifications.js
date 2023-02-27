@@ -3,7 +3,6 @@ const markAllAsReadBtn = document.querySelector(".mark-all-as-read");
 
 // create event listener for mark all as read button
 markAllAsReadBtn.addEventListener("click", function () {
-  // grab divs with class of unread [works only for ONE container]
   const unreadNotifs = document.querySelectorAll("div.unread");
   for (notif of unreadNotifs) {
     // add and remove classes
