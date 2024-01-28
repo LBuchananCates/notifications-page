@@ -10,6 +10,7 @@ Click here to view the demo! https://hilarious-cendol-ffb34f.netlify.app
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Special mentions](#proud-code-snippets)
   - [Continued development](#continued-development)
 - [Author](#author)
 
@@ -42,6 +43,38 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
+### Special mentions
+
+1. Improved skills with CSS interactive properties (`:hover` pseudo property)
+```
+css
+.woman-playing-chess:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.25rem hsl(219, 14%, 63%));
+}
+
+.notification-highlights:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification-highlights:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+```
+2. Using javascript to alter css properties (changing font color on click by giving html element 2 different class names)
+```
+
+const markAllAsReadBtn = document.querySelector(".mark-all-as-read");
+
+markAllAsReadBtn.addEventListener("click", function () {
+  const unreadNotifs = document.querySelectorAll("div.unread");
+  for (notif of unreadNotifs) {
+    // add and remove classes
+    notif.classList.add("read");
+    notif.classList.remove("unread");
+  }
+```
 
 ### Continued development
 
